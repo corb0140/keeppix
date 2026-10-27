@@ -1,10 +1,16 @@
-import "./App.css";
+import Layout from "./components/Layout";
+import Navbar from "./components/Navbar";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
   return (
-    <>
-      <h1>Test</h1>
-    </>
+    <Layout>
+      {/* Navigation */}
+      <Navbar />
+
+      {/* Routes */}
+      <AppRoutes />
+    </Layout>
   );
 }
 

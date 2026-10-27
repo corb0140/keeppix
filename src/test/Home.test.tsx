@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import App from "../App";
+import Home from "../pages/Home";
 
 describe("App Component", () => {
   test("renders heading correctly", () => {
-    render(<App />);
+    render(<Home />);
     const headingElement = screen.getByRole("heading");
     expect(headingElement).toBeInTheDocument();
   });
